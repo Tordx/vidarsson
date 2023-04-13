@@ -9,7 +9,7 @@ const Client = (props) => {
     <div className={`client-client ${props.rootClassName} `}>
       <span className="client-text">{props.Quote}</span>
       <div className="client-author">
-        <img alt="image" src={props.Avatar} className="client-avatar" />
+        <img alt="image" src={props.Avatar} className={props.clientavatar} />
         <div className="client-details">
           <span className="client-text1">{props.Author}</span>
           <span className="client-text2">{props.Mention}</span>

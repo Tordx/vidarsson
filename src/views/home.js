@@ -7,6 +7,7 @@ import Service from '../components/service'
 import Author from '../components/author'
 import Client from '../components/client'
 import './home.css'
+import '../components/client.css'
 
 const Home = (props) => {
 
@@ -27,6 +28,21 @@ const Home = (props) => {
     }, 2000);
     
   }
+
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.home-navbar');
+    const navname = document.querySelector('.home-company');
+    const navlogo = document.querySelector('.home-logo');
+    const scrollPosition = window.scrollY;
+  
+    if (scrollPosition > 700) {
+      navbar.style.backgroundColor = '#ffdd00'; // change to desired color
+      navname.style.color = 'black'
+    } else {
+      navbar.style.backgroundColor = '#00000000'; // original color
+      navname.style.color = 'black'
+    }
+  });
   return (
     <div className="home-container ">
        {showToast && <div className="toast">Text copied to clipboard!</div>}
@@ -42,6 +58,7 @@ const Home = (props) => {
               src="/playground_assets/logo.svg"
               className="home-logo"
             />
+          <span className="home-company">VIDARSSON ONLINE</span>
           </div>
           <div className="home-items">
             <button onClick={handleClick} className="home-button start-button button">
@@ -120,16 +137,17 @@ const Home = (props) => {
               programming interface (APIs), architecture, and servers
             </p>
           </div>
+          <div className="home-grid1">
+          <img alt="image" src={'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Apache_CouchDB_logo.svg/2027px-Apache_CouchDB_logo.svg.png'} className='client-avatar1' />
+          <img alt="image" src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png' className='client-avatar1' />
+          <img alt="image" src='https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png'  className='client-avatar1' />
+          </div>
         </div>
       </div>
       <div className="home-featured">
         <div className="home-header1">
           <h2 className="heading">Featured Work</h2>
           <div className="home-link">
-            <Link
-              Caption="100+ Projects"
-              rootClassName="link-root-class-name"
-            ></Link>
           </div>
         </div>
       </div>
@@ -182,25 +200,28 @@ const Home = (props) => {
                 Author="Marie Angelic"
                 Avatar="https://mariekitcanada.com/img/logo-1666451152.jpg"
                 Mention="@Mariekitcanada"
-                rootClassName="client-root-class-name"
+                clientavatar = "client-avatar"
               ></Client>
               <Client
                 Quote=""
                 Author="outsoar ph"
                 Avatar="data:image/png;base64,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"
                 Mention="@outsoar.ph"
+                clientavatar = "client-avatar"
               ></Client>
             <Client
               Quote=""
               Author="TTS"
               Avatar="https://us.123rf.com/450wm/rubelhossain/rubelhossain2111/rubelhossain211103267/178451405-tts-letter-initial-logo-design-vector-illustration.jpg"
               Mention="@TTS Netherlands"
+              clientavatar = "client-avatar"
             ></Client>
             <Client
               Quote=""
               Author="Lorem Solutions"
               Avatar="https://static.vecteezy.com/system/resources/previews/007/497/955/original/letter-l-logo-design-free-vector.jpg"
               Mention="@Lorem Inc."
+              clientavatar = "client-avatar"
             ></Client>
           </div>
         </div>
