@@ -54,6 +54,7 @@ const Home = (props) => {
         <header data-thq="thq-navbar" className="home-navbar-interactive">
           <div className="home-branding">
             <img
+              draggable = {false}
               alt="image"
               src="/playground_assets/logo.svg"
               className="home-logo"
@@ -84,6 +85,7 @@ const Home = (props) => {
               <div className="home-top">
                 <div className="home-branding1">
                   <img
+                    draggable = {false}
                     alt="image"
                     src="/playground_assets/logo.svg"
                     className="home-logo1"
@@ -126,6 +128,7 @@ const Home = (props) => {
       </header>
       <div className="home-description1">
         <div className="home-content">
+          <div className='home-services2 '>
           <div className="home-text09">
             <p className="home-paragraph">
               Our team of developers specializes in helping other developers set
@@ -137,12 +140,27 @@ const Home = (props) => {
               programming interface (APIs), architecture, and servers
             </p>
           </div>
-          <div className="home-grid1">
-          <img alt="image" src={'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Apache_CouchDB_logo.svg/2027px-Apache_CouchDB_logo.svg.png'} className='client-avatar1' />
-          <img alt="image" src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png' className='client-avatar1' />
-          <img alt="image" src='https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png'  className='client-avatar1' />
+          </div>
+          
+          <div className="home-grid111">
+          <div className='home-service'>
+          <img draggable = {false} alt="image" src={'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Apache_CouchDB_logo.svg/2027px-Apache_CouchDB_logo.svg.png'} className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png' className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/2560px-SQLite370.svg.png'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://i.imgur.com/3FfCUC2.png'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://www.prolival.fr/wp-content/uploads/2018/07/300x300xIBM-DB2-logo.png.pagespeed.ic_.ZyQH7PLHmc.png'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://www.orbitanalytics.com/wp-content/uploads/2021/11/Oracle-ERP-Cloud.png'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://allcode.com/wp-content/uploads/2022/12/Amazon-Aurora.jpg'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Navicat_Premium_v12.png/640px-Navicat_Premium_v12.png'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://www.percona.com/blog/wp-content/uploads/2018/01/Percona-Server-for-MySQL.jpg'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://dbdb.io/media/twitter/ingres.png'  className='client-avatar1' />
+          <img draggable = {false} alt="image" src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/DBeaver_logo.svg/1200px-DBeaver_logo.svg.png'  className='client-avatar1' />
+          </div>
           </div>
         </div>
+        
       </div>
       <div className="home-featured">
         <div className="home-header1">
@@ -235,6 +253,7 @@ const Home = (props) => {
                   alt="image"
                   src="/playground_assets/logo.svg"
                   className="home-logo2"
+                  draggable = {false}
                 />
                 <span className="home-company3">VIDARSSON ONLINE</span>
               </div>
@@ -259,6 +278,7 @@ const Home = (props) => {
         <img
           alt="image"
           src="/playground_assets/footerlogo.avif"
+          draggable = {false}
           className="home-image1"
         />
       </footer>

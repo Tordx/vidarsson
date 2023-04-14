@@ -7,7 +7,7 @@ import './author.css'
 const Author = (props) => {
   return (
     <div className={`author-author ${props.rootClassName} `}>
-      <img alt="image" src={props.Avatar} className="author-avatar" />
+      <img draggable = {false} alt="image" src={props.Avatar} className="author-avatar" />
       <div className="author-details">
         <span className="author-text">{props.Author}</span>
         <span className="author-text1">{props.Mention}</span>
