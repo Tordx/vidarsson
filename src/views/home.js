@@ -47,7 +47,7 @@ const Home = (props) => {
     <div className="home-container ">
        {showToast && <div className="toast">Text copied to clipboard!</div>}
       <Helmet>
-        <title>Vidarsson Online</title>
+        <title>vsodev</title>
         <meta property="og:title" content="Agency modern template" />
       </Helmet>
       <div className="home-navbar">
@@ -59,7 +59,7 @@ const Home = (props) => {
               src="/playground_assets/logo.svg"
               className="home-logo"
             />
-          <span className="home-company">VIDARSSON ONLINE</span>
+          <span className="home-company">vsodev.tech</span>
           </div>
           <div className="home-items">
             <button onClick={handleClick} className="home-button start-button button">
@@ -116,13 +116,11 @@ const Home = (props) => {
       <header className="home-hero overlay">
         <div className="home-header">
           <h1 className="home-title">
-            <span>CAN&apos;T GET ONLINE?</span>
+            CAN&apos;T GET ONLINE?
             <br></br>
           </h1>
           <p className="home-description">
-            Connecting your mobile application project to a live database has
-            never been easier! Let us help you streamline the process and get
-            your project up and running in no time.
+          Introduce your business into the online world! With us, your online vision becomes reality. Let's create something extraordinary together."
           </p>
         </div>
       </header>
@@ -131,15 +129,10 @@ const Home = (props) => {
           <div className='home-services2 '>
           <div className="home-text09">
             <p className="home-paragraph">
-              Our team of developers specializes in helping other developers set
-              up their backend systems by providing database HTTPS requests.
-            </p>
-            <p className="home-paragraph1">
-              Among other things. our team ensure that websites perform
-              correctly by focusing on databases, back-end logic, application
-              programming interface (APIs), architecture, and servers
+            Here at our company, we're not just developers – we're dream builders! From small startups to large enterprises, we specialize in turning your online dreams into reality.
             </p>
           </div>
+          <br/>
           </div>
           
           <div className="home-grid111">
@@ -171,8 +164,7 @@ const Home = (props) => {
       </div>
       <div className="home-client">
         <p className="home-text11">
-          We support hundreds of developers jump start their project through the
-          hassles of setting up their database online.
+        Experience exceptional web and mobile app development with us! Our expert team combines cutting-edge technology with sleek design to create engaging and user-friendly experiences across all platforms. From concept to launch, we prioritize your vision, ensuring timely delivery and seamless collaboration. With a focus on scalability and security, our solutions are built to grow with your business. Elevate your digital presence with our excellence in development.
         </p>
       </div>
       <div className="home-services">
@@ -180,31 +172,31 @@ const Home = (props) => {
           <h2 className="heading">SERVICES</h2>
         </div>
         <div className="home-grid">
-          <Service
-            Title="HTTP request"
-            Description="We provide a no setup  HTTPS request URL service that is encrypted to  protect sensitive information for your client and project"
-            rootClassName="service-root-class-name"
-          ></Service>
-          <Service
-            Title="Web Hosting"
-            Description="A no setup web hosting services are designed to provide you with a reliable and secure platform to host your website."
-            rootClassName="service-root-class-name1"
-          ></Service>
-          <Service
-            Title="Cloud Hosting"
-            Description="A no setup cloud hosting services designed to provide you with a reliable and secure platform to host your website and database"
-            rootClassName="service-root-class-name5"
-          ></Service>
+       <Service
+        Title="Web Development"
+        Description="Our expert team specializes in crafting bespoke websites tailored to your needs, ensuring seamless functionality and stunning design to captivate your audience."
+        rootClassName="service-root-class-name"
+        >
+      </Service>
+      <Service
+        Title="App Development"
+        Description="Turn your ideas into reality with our custom mobile app development services. From concept to launch, we'll guide you through the process, creating intuitive and engaging apps for your audience."
+        rootClassName="service-root-class-name1">
+
+      </Service>
+      <Service
+        Title="Web Hosting"
+        Description="Experience hassle-free web hosting with our reliable and secure services. We provide a no-setup hosting platform, ensuring your website stays online and accessible to your audience."
+        rootClassName="service-root-class-name5"
+      >
+      </Service>
         </div>
       </div>
       <div className="home-about">
         <div className="home-header3">
-          <h2 className="home-company2">VIDARSSON ONLINE</h2>
+          <h2 className="home-company2">vsodev.tech</h2>
           <span className="home-description2">
-            “Our software company is a leading provider of database, web, and
-            cloud hosting solutions for businesses of all sizes. With a focus on
-            innovation and cutting-edge technology, we strive to deliver the
-            most reliable and secure hosting services to our clients..”
+          "At our software company, we lead the way in web and mobile development, as well as top-notch web hosting solutions. Whether you're a small startup or a large corporation, we've got you covered with innovative technology and reliable hosting services. Trust us to bring your digital projects to life while ensuring they're securely hosted in the cloud."
           </span>
           <Author Author="Sammi Lauta" Mention="@sammi"></Author>
         </div>
@@ -241,6 +233,48 @@ const Home = (props) => {
               Mention="@Lorem Inc."
               clientavatar = "client-avatar"
             ></Client>
+            <Client
+              Quote=""
+              Author="multi-Management Systems"
+              Avatar="https://upload.wikimedia.org/wikipedia/commons/3/33/Flag_of_Kalamansig%2C_Sultan_Kudarat.png"
+              Mention="@Kalamansig LGU"
+              clientavatar = "client-avatar"
+            ></Client>
+            <Client
+              Quote=""
+              Author="Abelens"
+              Avatar="https://scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-6/302444689_572762947973117_1772670430591676017_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=783fdb&_nc_eui2=AeGjyBlwjOB9S2xNmhZqjil3dgaaIUOjsbl2BpohQ6OxudLEdqF9U0BREwK54DXDcNo7xlXkmfxF80xHHYv4PJjN&_nc_ohc=H-RozWZOZhsAX90pdUn&_nc_ht=scontent.fmnl9-4.fna&oh=00_AfBMejus-ZrF9U7zw_ZdgHYeL-RsytT05Z0eXC-_JHyN5w&oe=65E3E196"
+              Mention="@Abelens Alaminos"
+              clientavatar = "client-avatar"
+            ></Client>
+            <Client
+              Quote=""
+              Author="Viqumo"
+              Avatar="https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.15752-9/423599790_819749903317166_6911644275486638588_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeEVfGreZNXR9Kk-ZbZp6EDRE6lpHbrC05ITqWkdusLTkrgD0gglKjH68QHZwQM1vDjo52ty-ihBmRratP31zqXa&_nc_ohc=1zF094egsx0AX_2z8sj&_nc_ht=scontent.fmnl9-1.fna&oh=03_AdSTjpXAQiEJZBoUxr5pGXwhftA_ACs2TYCf_qmtruQSVA&oe=6606F7A8"
+              Mention="@viqumo"
+              clientavatar = "client-avatar"
+            ></Client>
+            <Client
+              Quote=""
+              Author="Coursify"
+              Avatar="https://static.vecteezy.com/system/resources/previews/007/497/955/original/letter-l-logo-design-free-vector.jpg"
+              Mention="@Coursify"
+              clientavatar = "client-avatar"
+            ></Client>
+            <Client
+              Quote=""
+              Author="TVMS - POSO"
+              Avatar="https://static.vecteezy.com/system/resources/previews/007/497/955/original/letter-l-logo-design-free-vector.jpg"
+              Mention="@Lingayen LGU"
+              clientavatar = "client-avatar"
+            ></Client>
+            <Client
+              Quote=""
+              Author="SDA"
+              Avatar="https://static.vecteezy.com/system/resources/previews/007/497/955/original/letter-l-logo-design-free-vector.jpg"
+              Mention="@SDA Trials"
+              clientavatar = "client-avatar"
+            ></Client>
           </div>
         </div>
       </div>
@@ -255,23 +289,18 @@ const Home = (props) => {
                   className="home-logo2"
                   draggable = {false}
                 />
-                <span className="home-company3">VIDARSSON ONLINE</span>
+                <span className="home-company3">vsodev.tech</span>
               </div>
               <div className="home-location">
-                <span className="home-caption">US Office</span>
-                <span className="home-value">
-                680 Lawrence Expy, Santa Clara, CA 95051, United States
-                </span>
-                <br/>
                 <span className="home-caption">PH Office</span>
                 <span className="home-value">
-                  Santa Barbara, Pangasinan 2419 Philippines
+                  2nd Floor Joevic Bldg., Marikina-Infanta Hwy Cainta, Rizal
                 </span>
               </div>
             </div>
             <div className="home-location1">
               <span className="home-caption1">Let&apos;s talk</span>
-              <span className="home-value1">sayhello@vidarsson.online</span>
+              <span className="home-value1">sayhello@vsodev.tech</span>
             </div>
           </div>
         </div>
